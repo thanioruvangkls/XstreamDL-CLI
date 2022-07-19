@@ -71,9 +71,9 @@ def command_handler(args: CmdArgs):
             args.mp4decrypt = (bin_path / 'mp4decrypt.exe').resolve().as_posix()
             args.mp4box = (bin_path / 'mp4box.exe').resolve().as_posix()
         else:
-            args.ffmpeg = ('%s/ffmpeg').resolve().as_posix()
-            args.mp4decrypt = ('%s/mp4decrypt').resolve().as_posix()
-            args.mp4box = ('%s/mp4box').resolve().as_posix()
+            args.ffmpeg = 'ffmpeg'
+            args.mp4decrypt = 'mp4decrypt'
+            args.mp4box = 'mp4box'
     logger.debug(f'ffmpeg {args.ffmpeg}')
     logger.debug(f'mp4decrypt {args.mp4decrypt}')
     logger.debug(f'mp4box {args.mp4box}')
